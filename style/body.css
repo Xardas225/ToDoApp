@@ -1,0 +1,231 @@
+.main {
+  padding-top: 3.5rem;
+  height: 100vh;
+  padding-top: 3.5rem;
+}
+
+.main__wrapper {
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20rem 1fr;
+      grid-template-columns: 20rem 1fr;
+}
+
+.main__left__menu {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #646464;
+}
+
+.main__content {
+  padding: 1rem 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #2b2b2b;
+}
+
+.task__card__title {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.task__card__body {
+  margin-top: 4rem;
+}
+
+.task__card__title-input {
+  padding: .3rem;
+  background-color: inherit;
+  border: 1px solid #929090;
+  border-radius: .4rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.add__task {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #e41313;
+}
+
+.add__task:hover {
+  opacity: .8;
+}
+
+.add__task:hover::before {
+  opacity: .8;
+}
+
+.add__task::before {
+  content: '\2b';
+  font-family: FontAwesome;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.task__list {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.task__list-btn {
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid #929090;
+  border-radius: 50%;
+  margin-top: 1rem;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.task__list:hover {
+  opacity: .8;
+}
+
+.task__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #929090;
+}
+
+.task__list-item:hover {
+  opacity: .8;
+}
+
+.task__list__fields {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.task__list__title {
+  color: #747474;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.task__list__text {
+  color: #747474;
+}
+
+.new__task {
+  margin-top: 1rem;
+  display: block;
+  padding: 1rem;
+  background-color: #252525;
+  border: 1px solid #161616;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.new__task__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: .5rem;
+}
+
+.new__task__fields input {
+  border: none;
+  background-color: inherit;
+  color: #747474;
+}
+
+.new__task__fields input::-webkit-input-placeholder {
+  color: #747474;
+}
+
+.new__task__fields input:-ms-input-placeholder {
+  color: #747474;
+}
+
+.new__task__fields input::-ms-input-placeholder {
+  color: #747474;
+}
+
+.new__task__fields input::placeholder {
+  color: #747474;
+}
+
+.new__task__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.new__task__title::-webkit-input-placeholder {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.new__task__title:-ms-input-placeholder {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.new__task__title::-ms-input-placeholder {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.new__task__title::placeholder {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.new__task__text {
+  margin-bottom: 1rem;
+}
+
+.new__task__btns {
+  margin-top: 1rem;
+}
+
+.new__task__btns button {
+  cursor: pointer;
+  margin-right: .7rem;
+  border: none;
+  font-size: 1rem;
+  padding: .4rem;
+  border-radius: .4rem;
+  font-weight: 600;
+}
+
+.new__task__add {
+  color: #fff;
+  background-color: #e41313;
+}
+/*# sourceMappingURL=body.css.map */

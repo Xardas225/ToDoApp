@@ -1,0 +1,47 @@
+@import url(./header.css);
+@import url(./reset.min.css);
+@import url(./body.css);
+* {
+  font-family: 'Open Sans';
+  font-size: 1rem;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.d-none {
+  display: none;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+input {
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.show__status__block {
+  position: fixed;
+  border: none;
+  border-radius: 1rem;
+  top: 2rem;
+  right: 2rem;
+  width: 14rem;
+  height: 7rem;
+  padding: 1rem;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */

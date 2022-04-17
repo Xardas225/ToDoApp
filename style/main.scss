@@ -1,0 +1,43 @@
+@import url(./header.css);
+@import url(./reset.min.css);
+@import url(./body.css);
+
+* {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.d-none {
+    display: none;
+    opacity: 0;
+    transition: all .5s;
+}
+
+input
+{
+    outline: none;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+
+.show__status__block {
+    position: fixed;
+    border: none;
+    border-radius: 1rem;
+    top: 2rem;
+    right: 2rem;
+    width: 14rem;
+    height: 7rem;
+    padding: 1rem;
+    background-color: rgba(255,0,0,0.8);
+    color: #fff;
+}

@@ -1,0 +1,177 @@
+.main {
+	padding-top: 3.5rem;
+	height: 100vh;
+	padding-top: 3.5rem;
+
+	&__wrapper {
+		min-height: 100%;
+		min-width: 100%;
+		box-sizing: border-box;
+
+		display: grid;
+		grid-template-columns: 20rem 1fr;
+	}
+}
+
+.main__left__menu {
+	box-sizing: border-box;
+	background-color: #646464;
+}
+
+.main__content {
+	padding: 1rem 4rem;
+	box-sizing: border-box;
+	background-color: #2b2b2b;
+}
+
+.task__card {
+	&__title {
+		color: #fff;
+		font-size: 1.5rem;
+	}
+
+	&__body {
+		margin-top: 4rem;
+	}
+
+	&__title-input {
+		padding: .3rem;
+		background-color: inherit;
+		border: 1px solid #929090;
+		border-radius: .4rem;
+		color: #fff;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+}
+
+.add__task {
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 1.1rem;
+	color: rgb(228, 19, 19);
+
+	&:hover {
+		opacity: .8;
+
+		&::before {
+			opacity: .8;
+		}
+	}
+
+	&::before {
+		content: '\2b';
+		font-family: FontAwesome;
+		color: inherit;
+		font-size: 1.2rem;
+	}
+}
+
+.task__list {
+	margin-top: 1rem;
+	cursor: pointer;
+
+	&-btn {
+		cursor: pointer;
+		background-color: inherit;
+		border: 1px solid #929090;
+		border-radius: 50%;
+		margin-top: 1rem;
+		height: 1.4rem;
+		width: 1.4rem;
+	}
+
+	&:hover {
+		opacity: .8;
+	}
+
+	&-item {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: .5rem;
+		border-bottom: 1px solid #929090;
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	&__fields {
+		margin-left: 1rem;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__title {
+		color: #747474;
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+
+	&__text {
+		color: #747474;
+	}
+}
+
+.new__task {
+	margin-top: 1rem;
+	display: block;
+	padding: 1rem;
+	background-color: #252525;
+	border: 1px solid #161616;
+	border-radius: 1rem;
+	width: 100%;
+
+	&__fields {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: .5rem;
+
+		input {
+			border: none;
+			background-color: inherit;
+			color: #747474;
+
+			&::placeholder {
+				color: #747474;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 1.5rem;
+		font-weight: 600;
+
+		&::placeholder {
+			font-size: 1.5rem;
+			font-weight: 600;
+		}
+	}
+
+	&__text {
+		margin-bottom: 1rem;
+	}
+
+	&__btns {
+		margin-top: 1rem;
+
+		button {
+			cursor: pointer;
+			margin-right: .7rem;
+			border: none;
+			font-size: 1rem;
+			padding: .4rem;
+			border-radius: .4rem;
+			font-weight: 600;
+		}
+	}
+
+	&__add {
+		color: #fff;
+		background-color: rgb(228, 19, 19);
+	}
+}
