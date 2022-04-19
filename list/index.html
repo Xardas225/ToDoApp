@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <title>Список задач</title>
+</head>
+
+<body>
+  <div class="content">
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__control">
+          <a class="nav__control__toggleMenu"></a>
+          <a class="nav__control__home" href="/"></a>
+          <div class="nav__control__search">
+            <input id="search" class="nav__control__search-input" type="text" name="search" placeholder="Поиск">
+          </div>
+        </div>
+        <div class="nav__profile">
+          <div class="nav__profile__user">
+            <span class="user__name"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="side__panel">
+        <a href="/list" class="side__panel__actual"></a>
+        <a href="/list/important" class="side__panel__important">Важные</a>
+        <a href="/list/planned" class="side__panel__important">Запланированные</a>
+        <a href="/list/complete" class="side__panel__important">Завершённые</a>
+      </div>
+      <div class="main__wrapper">
+        <div class="main__content">
+          <div class="task__card">
+            <h2 class="task__card__title">
+              Актуальные задачи
+            </h2>
+            <div class="task__card__title-block d-none">
+              <input type="text" class="task__card__title-input">
+              <div class="task__card__title-block-btns">
+                <button class="task__card__title-block__save">Сохранить</button>
+                <button class="task__card__title-block__cancel">Отмена</button>
+              </div>
+            </div>
+            <span class="task__card__title-time"></span>
+
+            <div class="task__card__body">
+              <ul class="task__list">
+
+              </ul>
+              <div class="add__task">
+                Добавить задачу
+              </div>
+
+              <div class="new__task d-none">
+                <div class="new__task__fields">
+                  <input id="new__task__title" class="new__task__title" type="text" placeholder="Название">
+                  <input id="new__task__text" class="new__task__text" type="text" placeholder="Описание">
+                </div>
+                <div class="new__task__btns">
+                  <button id="new__task__add" class="new__task__add" type="button">Добавить задачу</button>
+                  <button id="new__task__cancel" class="new__task__cancel" type="button">Отмена</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+
+  <div class="show__status__block d-none">
+    <h3 class="show__status__title">
+
+    </h3>
+    <div class="show__status__text">
+
+    </div>
+  </div>
+
+  <div class="task__popup-fade d-none">
+    <div class="task__popup">
+      <a class="task__popup-close" href="#">Закрыть</a>
+      <div class="task__popup__body">
+        <div class="task__popup__fields">
+          <div class="task__popup__field task__popup__title">
+            <label class="task__popup__label task__popup__title-label">Название задачи</label>
+            <input type="text" class="task__popup__input task__popup__title-input" placeholder="Название задачи">
+          </div>
+          <div class="task__popup__field task__popup__desc">
+            <label class="task__popup__label task__popup__desc-label">Описание задачи</label>
+            <input type="text" class="task__popup__input task__popup__desc-input" placeholder="Описание задачи">
+          </div>
+        </div>
+        <div class="task__popup__tabs">
+          <a class="task__popup__tab">Комментарии</a>
+          <a class="task__popup__tab">Метки</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://use.fontawesome.com/5c55edb9d8.js"></script>
+  <script src="../scripts/moment.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
+
+</html>
